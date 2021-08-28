@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Demand</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/15c1546edc.js" crossorigin="anonymous"></script>
     <style>
         body {
             background: url(images/bg-image.jpg) no-repeat;
@@ -25,9 +26,12 @@
             </div>
         </form>
         <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <i id="sun-cloud" class="fas fa-cloud fs-1"></i>
+            <i id="rain" class="fas fa-cloud-rain fs-1" hidden></i>
+            <i id="storm" class="fas fa-poo-storm fs-1" hidden></i>
+            <i id="clear" class="fas fa-sun fs-1" hidden></i>
             <h1 id="name">Dhaka</h1>
-            <h3>Temperature : <span id="temperature">301.14</span></h3>
+            <h3>Temperature : <span id="temperature">28</span>&deg;C</h3>
             <h1 class="lead" id="sky">Clouds</h1>
         </div>
     </div>
